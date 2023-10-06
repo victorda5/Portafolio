@@ -1,0 +1,33 @@
+---
+import TechCard from "./TechCard.astro";
+
+const technologies = [
+  { name: "HTML", url: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+  { name: "CSS", url: "https://developer.mozilla.org/docs/Web/CSS" },
+  { name: "JavaScript", url: "https://developer.mozilla.org/docs/Web/JavaScript" },
+  { name: "jQuery", url: "https://jquery.com" },
+  { name: "TailwindCSS", url: "https://tailwindcss.com" },
+  { name: "Astro", url: "https://astro.build" },
+  { name: "PHP", url: "https://www.php.net" },
+  { name: "MySql", url: "https://www.mysql.com" },
+  { name: "Wordpress", url: "https://wordpress.com/" },
+  { name: "Elementor", url: "https://elementor.com/" },
+  { name: "Crocoblock", url: "https://crocoblock.com/" },
+];
+---
+
+<section class="mt-8 sm:mt-16">
+
+  <h2 class="text-[24px] sm:text-[32px] text-titlewhite font-bold mb-4 md:mb-8">
+    Tecnologías
+  </h2>
+
+  <div class="grid grid-cols-2 gap-y-4 lg:grid-cols-3 gap-x-4 md:gap-y-8 md:gap-x-4">
+    {technologies.map((tech) => 
+    <TechCard 
+      name={tech.name} 
+      url={tech.url} />
+    )}
+  </div>
+
+</section>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Portafolio de Víctor Davó, desarrollador web"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="author" content="Víctor Davó" />
+    <title>Víctor Davó | Portafolio</title>
+    <meta name="theme-color" content="#FF8000" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://victor-davo.netlify.app/" />
+    <meta property="og:title" content="Víctor Davó | Portafolio" />
+    <meta
+      property="og:description"
+      content="Portafolio de Víctor Davó, desarrollador web"
+    />
+    <meta
+      property="og:image"
+      content="https://victor-davo.netlify.app/og.webp"
+    />
+    <!-- Twitter -->
+    <meta property="twitter:type" content="website" />
+    <meta property="twitter:url" content="https://victor-davo.netlify.app/" />
+    <meta property="twitter:title" content="Víctor Davó | Portafolio" />
+    <meta
+      property="twitter:description"
+      content="Portafolio de Víctor Davó, desarrollador web"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:image"
+      content="https://victor-davo.netlify.app/og.webp"
+    />
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js" />
+  </head>
+  <body
+    class="bg-[#171717] bg-[url('/fondo.svg')] lg:px-5 bg-fixed bg-no-repeat bg-cover text-textwhite"
+  >
+    <slot />
+    <style is:global>
+
+      @font-face {
+        font-family: "Gotham SSm A";
+        src: url("/fonts/Gotham_Book.woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Gotham SSm A";
+        src: url("/fonts/Gotham_Medium.woff2");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Gotham SSm A";
+        src: url("/fonts/Gotham_Bold.woff2");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      body {
+        font-family: "Gotham SSm A";
+      }
+
+      /* ===== Scrollbar CSS ===== */
+      /* Firefox */
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: #303030 #666464;
+      }
+
+      /* Chrome, Edge, and Safari */
+      *::-webkit-scrollbar {
+        width: 12px;
+      }
+
+      *::-webkit-scrollbar-track {
+        background: rgb(20 20 20);
+      }
+
+      *::-webkit-scrollbar-thumb {
+        background-color: #282828;
+        border-radius: 4px;
+      }
+
+      *::-webkit-scrollbar-thumb:hover {
+        background: #303030;
+      }
+
+      * {
+        -webkit-tap-highlight-color: transparent;
+      }
+    </style>
+  </body>
+</html>
