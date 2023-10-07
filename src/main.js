@@ -1,13 +1,3 @@
-const sr = ScrollReveal({
-  origin: "top",
-  distance: "40px",
-  duration: 1200,
-  delay: 100,
-  //reset: true;
-});
-
-sr.reveal(".scroll-reveal", { interval: 50, origin: "bottom" });
-
 const expBtn = document.getElementById("experiencia");
 const eduBtn = document.getElementById("educacion");
 
