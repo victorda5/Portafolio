@@ -23,6 +23,10 @@ Portafolio web de Víctor Davó
 **Client:** Astro, JavaScript, TailwindCSS
 
 
+## Google Lighthouse Score
+ ![](https://public-files.gumroad.com/7a45rw6odvtmdmqhtmt3vz48v9uo)
+
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
