@@ -14,38 +14,28 @@ const eduBtn = document.getElementById("educacion");
 const expTxt = document.getElementById("experienciaTxt");
 const eduTxt = document.getElementById("educacionTxt");
 
+function toggleVisibility(showElement, hideElement) {
+  showElement.classList.remove("hidden");
+  showElement.classList.add("grid");
+
+  hideElement.classList.remove("grid");
+  hideElement.classList.add("hidden");
+}
+
+function updateButtonStyles(activeBtn, inactiveBtn) {
+  activeBtn.classList.remove("text-grey");
+  activeBtn.classList.add("text-titlewhite");
+
+  inactiveBtn.classList.remove("text-titlewhite");
+  inactiveBtn.classList.add("text-grey");
+}
+
 expBtn.addEventListener("click", function () {
-  if (eduTxt.classList.contains("grid")) {
-    eduTxt.classList.remove("grid");
-    eduTxt.classList.add("hidden");
-  }
-
-  if (expBtn.classList.contains("text-grey")) {
-    expBtn.classList.remove("text-grey");
-    expBtn.classList.add("text-titlewhite");
-  }
-
-  eduBtn.classList.remove("text-titlewhite");
-  eduBtn.classList.add("text-grey");
-
-  expTxt.classList.remove("hidden");
-  expTxt.classList.add("grid");
+  toggleVisibility(expTxt, eduTxt);
+  updateButtonStyles(expBtn, eduBtn);
 });
 
 eduBtn.addEventListener("click", function () {
-  if (expTxt.classList.contains("grid")) {
-    expTxt.classList.remove("grid");
-    expTxt.classList.add("hidden");
-  }
-
-  if (eduBtn.classList.contains("text-grey")) {
-    eduBtn.classList.remove("text-grey");
-    eduBtn.classList.add("text-titlewhite");
-  }
-
-  expBtn.classList.remove("text-titlewhite");
-  expBtn.classList.add("text-grey");
-
-  eduTxt.classList.remove("hidden");
-  eduTxt.classList.add("grid");
+  toggleVisibility(eduTxt, expTxt);
+  updateButtonStyles(eduBtn, expBtn);
 });
